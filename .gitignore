@@ -1,0 +1,4 @@
+.venv
+venv_denteo/
+__pycache__/
+.env
