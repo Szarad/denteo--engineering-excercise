@@ -4,7 +4,7 @@
 ### Docker:
 1. Build a Docker image
 ```
-docker build -t <DockerImageName>:<DockerImageReleaseTag>
+docker build -t <DockerImageName>:<DockerImageReleaseTag> .
 ```
 2. Run the Docker image:
 ```
