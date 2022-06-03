@@ -45,8 +45,6 @@ def find_free_time_slots(search_range, weekly_appointments):
                 # If two values are the same, return position on the left
                 idx_to =  bisect.bisect_left( all_slots_to, booked_to) + 1
                 # Change available slots to 'booked' if overlapping with booked_slots
-                print("all_slots= ", len(all_slots))
-                print("all_slots= ", [s for s in all_slots if s["closed"] == True])
                 for i in range(idx_from, idx_to):
                     all_slots[i]["booked"] = True
         # Display only free slots from all available slots
